@@ -127,9 +127,9 @@ export default function Page() {
                 href="https://t.me/AyushAdsAgency"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block border-4 border-red-500 rounded-2xl p-4 text-center bg-secondary/10 hover:bg-secondary/20 transition-colors cursor-pointer"
+                className="block border border-secondary/50 rounded-2xl p-6 text-center bg-secondary/10 hover:bg-secondary/20 transition-colors cursor-pointer"
               >
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Ad setup by{' '}
                   <span className="text-primary font-semibold">
                     @AyushAdsAgency
