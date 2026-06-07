@@ -124,7 +124,7 @@ export default function Page() {
 
               {/* Agency Credit Box */}
               <Link
-                href="https://t.me/AyushAdsAgency"
+                href="https://t.me/+ZOvmFKi-dxE0NDVl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block border border-secondary/50 rounded-2xl p-6 text-center bg-secondary/10 hover:bg-secondary/20 transition-colors cursor-pointer"
