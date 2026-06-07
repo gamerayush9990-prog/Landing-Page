@@ -123,19 +123,19 @@ export default function Page() {
               </div>
 
               {/* Agency Credit Box */}
-              <div className="border border-secondary/60 rounded-xl p-4 text-center bg-secondary/10">
+              <Link
+                href="https://t.me/AyushAdsAgency"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block border-4 border-red-500 rounded-2xl p-4 text-center bg-secondary/10 hover:bg-secondary/20 transition-colors cursor-pointer"
+              >
                 <p className="text-sm text-muted-foreground">
                   Ad setup by{' '}
-                  <Link
-                    href="https://t.me/AyushAdsAgency"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary font-semibold hover:text-primary/80 transition-colors"
-                  >
+                  <span className="text-primary font-semibold">
                     @AyushAdsAgency
-                  </Link>
+                  </span>
                 </p>
-              </div>
+              </Link>
             </div>
 
             {/* Secondary CTA Button */}
