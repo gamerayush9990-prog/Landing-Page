@@ -83,7 +83,7 @@ export default function Page() {
             {/* CTA Button */}
             <div className="mb-8 flex justify-center">
               <Link
-                href="https://t.me/+1FmPyaiBYd04YWM1"
+                href="https://t.me/+JgDHTVUNHokwZWM1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
