@@ -11,8 +11,6 @@ interface Star {
   duration: number
 }
 
-const TELEGRAM_LINK = 'https://t.me/+JgDHTVUNHokwZWM1'
-
 export default function Page() {
   const [stars, setStars] = useState<Star[]>([])
 
@@ -85,7 +83,7 @@ export default function Page() {
             {/* CTA Button */}
             <div className="mb-8 flex justify-center">
               <Link
-                href={TELEGRAM_LINK}
+                href="https://t.me/+1FmPyaiBYd04YWM1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
