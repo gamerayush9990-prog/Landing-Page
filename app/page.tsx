@@ -12,11 +12,9 @@ interface Star {
 }
 
 const TELEGRAM_LINK = 'https://t.me/+JgDHTVUNHokwZWM1'
-const REDIRECT_DELAY = 500 // 0.5 seconds in milliseconds
 
 export default function Page() {
   const [stars, setStars] = useState<Star[]>([])
-  const [countdown, setCountdown] = useState(0.5)
 
   useEffect(() => {
     // Generate random stars
@@ -33,22 +31,7 @@ export default function Page() {
     setStars(generatedStars)
   }, [])
 
-  useEffect(() => {
-    // Auto-redirect after 0.5 seconds
-    const redirectTimer = setTimeout(() => {
-      window.location.href = TELEGRAM_LINK
-    }, REDIRECT_DELAY)
 
-    // Update countdown display
-    const countdownInterval = setInterval(() => {
-      setCountdown((prev) => Math.max(prev - 0.1, 0))
-    }, 100)
-
-    return () => {
-      clearTimeout(redirectTimer)
-      clearInterval(countdownInterval)
-    }
-  }, [])
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden bg-background">
@@ -99,11 +82,6 @@ export default function Page() {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Exclusive Content • Expert Insights • Daily Updates • Active Community
               </p>
-              <div className="pt-4 animate-pulse">
-                <p className="text-sm text-primary font-semibold">
-                  Redirecting in {countdown.toFixed(1)}s...
-                </p>
-              </div>
             </div>
 
             {/* CTA Button */}
