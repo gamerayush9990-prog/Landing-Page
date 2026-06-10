@@ -31,8 +31,6 @@ export default function Page() {
     setStars(generatedStars)
   }, [])
 
-
-
   return (
     <main className="relative min-h-screen w-full overflow-hidden bg-background">
       {/* Starfield Background */}
